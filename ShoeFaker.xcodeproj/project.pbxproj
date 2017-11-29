@@ -16,6 +16,9 @@
 		250B8E4F1FC6E69900B8992D /* ShoeFakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E4E1FC6E69900B8992D /* ShoeFakerUITests.swift */; };
 		250B8E5D1FC6E77600B8992D /* ShoeFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E5C1FC6E77600B8992D /* ShoeFaker.swift */; };
 		250B8E5F1FC6F51300B8992D /* SensorValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E5E1FC6F51300B8992D /* SensorValues.swift */; };
+		258117111FCEDACF00914729 /* LiftFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258117101FCEDACF00914729 /* LiftFoot.swift */; };
+		25949EB81FCEB7AA00602FCF /* ShoeDataNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25949EB71FCEB7AA00602FCF /* ShoeDataNormalizer.swift */; };
+		25949EBA1FCEBBC900602FCF /* GenerateRandomValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25949EB91FCEBBC900602FCF /* GenerateRandomValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		250B8E501FC6E69900B8992D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250B8E5C1FC6E77600B8992D /* ShoeFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeFaker.swift; sourceTree = "<group>"; };
 		250B8E5E1FC6F51300B8992D /* SensorValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorValues.swift; sourceTree = "<group>"; };
+		258117101FCEDACF00914729 /* LiftFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftFoot.swift; sourceTree = "<group>"; };
+		25949EB71FCEB7AA00602FCF /* ShoeDataNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDataNormalizer.swift; sourceTree = "<group>"; };
+		25949EB91FCEBBC900602FCF /* GenerateRandomValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateRandomValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +109,11 @@
 			children = (
 				250B8E2E1FC6E69900B8992D /* AppDelegate.swift */,
 				250B8E301FC6E69900B8992D /* ViewController.swift */,
+				2581170F1FCEDA9200914729 /* Classes */,
 				250B8E321FC6E69900B8992D /* Main.storyboard */,
 				250B8E351FC6E69900B8992D /* Assets.xcassets */,
 				250B8E371FC6E69900B8992D /* LaunchScreen.storyboard */,
 				250B8E3A1FC6E69900B8992D /* Info.plist */,
-				250B8E5C1FC6E77600B8992D /* ShoeFaker.swift */,
-				250B8E5E1FC6F51300B8992D /* SensorValues.swift */,
 			);
 			path = ShoeFaker;
 			sourceTree = "<group>";
@@ -129,6 +134,18 @@
 				250B8E501FC6E69900B8992D /* Info.plist */,
 			);
 			path = ShoeFakerUITests;
+			sourceTree = "<group>";
+		};
+		2581170F1FCEDA9200914729 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				250B8E5C1FC6E77600B8992D /* ShoeFaker.swift */,
+				250B8E5E1FC6F51300B8992D /* SensorValues.swift */,
+				25949EB71FCEB7AA00602FCF /* ShoeDataNormalizer.swift */,
+				25949EB91FCEBBC900602FCF /* GenerateRandomValue.swift */,
+				258117101FCEDACF00914729 /* LiftFoot.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25949EB81FCEB7AA00602FCF /* ShoeDataNormalizer.swift in Sources */,
+				25949EBA1FCEBBC900602FCF /* GenerateRandomValue.swift in Sources */,
 				250B8E5D1FC6E77600B8992D /* ShoeFaker.swift in Sources */,
 				250B8E311FC6E69900B8992D /* ViewController.swift in Sources */,
+				258117111FCEDACF00914729 /* LiftFoot.swift in Sources */,
 				250B8E2F1FC6E69900B8992D /* AppDelegate.swift in Sources */,
 				250B8E5F1FC6F51300B8992D /* SensorValues.swift in Sources */,
 			);

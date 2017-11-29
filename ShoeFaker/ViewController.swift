@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var rightShoe: UIView!
+    @IBOutlet weak var leftShoe: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,11 +25,12 @@ class ViewController: UIViewController {
     }
     
     @objc func gotNewShoeData(notification: Notification) {
-        let leftShoe: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
-        let rightShoe: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
+        let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
+        let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
         
-        print("Left Shoe Sensor 1: " + String(leftShoe.sensor1))
-        print("Right Shoe Sensor 1: " + String(rightShoe.sensor1))
+        
+        leftShoe.alpha = CGFloat(leftShoeData.sensor1)
+        rightShoe.alpha = CGFloat(rightShoeData.sensor1)
     }
 
     override func didReceiveMemoryWarning() {
