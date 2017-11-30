@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
         let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
         
-        
         leftShoeSensor1.alpha = CGFloat(leftShoeData.sensor1)
         rightShoeSensor1.alpha = CGFloat(rightShoeData.sensor1)
     }
