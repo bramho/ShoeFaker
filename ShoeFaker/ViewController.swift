@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var rightShoe: UIView!
-    @IBOutlet weak var leftShoe: UIView!
+    @IBOutlet weak var rightShoeSensor1: UIView!
+    @IBOutlet weak var leftShoeSensor1: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
         
         
-        leftShoe.alpha = CGFloat(leftShoeData.sensor1)
-        rightShoe.alpha = CGFloat(rightShoeData.sensor1)
+        leftShoeSensor1.alpha = CGFloat(leftShoeData.sensor1)
+        rightShoeSensor1.alpha = CGFloat(rightShoeData.sensor1)
     }
 
     override func didReceiveMemoryWarning() {
