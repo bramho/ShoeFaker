@@ -11,19 +11,6 @@ import UIKit
 
 
 class AverageSensorValue{
-    var sensorOutlets:[UIView] = []
-    
-    @IBOutlet weak var rightShoeSensor1: UIView!
-    @IBOutlet weak var rightShoeSensor2: UIView!
-    @IBOutlet weak var rightShoeSensor3: UIView!
-    @IBOutlet weak var rightShoeSensor4: UIView!
-
-
-    // Left shoe sensor
-    @IBOutlet weak var leftShoeSensor1: UIView!
-    @IBOutlet weak var leftShoeSensor2: UIView!
-    @IBOutlet weak var leftShoeSensor3: UIView!
-    @IBOutlet weak var leftShoeSensor4: UIView!
     
     var MAX_AVERAGE_SENSOR_VALUE:Float = 0.0
     
