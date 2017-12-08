@@ -14,11 +14,12 @@
 		250B8E391FC6E69900B8992D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250B8E371FC6E69900B8992D /* LaunchScreen.storyboard */; };
 		250B8E441FC6E69900B8992D /* ShoeFakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E431FC6E69900B8992D /* ShoeFakerTests.swift */; };
 		250B8E4F1FC6E69900B8992D /* ShoeFakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E4E1FC6E69900B8992D /* ShoeFakerUITests.swift */; };
-		250B8E5D1FC6E77600B8992D /* ShoeFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E5C1FC6E77600B8992D /* ShoeFaker.swift */; };
+		250B8E5D1FC6E77600B8992D /* BalanceFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E5C1FC6E77600B8992D /* BalanceFaker.swift */; };
 		250B8E5F1FC6F51300B8992D /* SensorValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B8E5E1FC6F51300B8992D /* SensorValues.swift */; };
 		258117111FCEDACF00914729 /* LiftFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258117101FCEDACF00914729 /* LiftFoot.swift */; };
 		25949EB81FCEB7AA00602FCF /* ShoeDataNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25949EB71FCEB7AA00602FCF /* ShoeDataNormalizer.swift */; };
 		25949EBA1FCEBBC900602FCF /* GenerateRandomValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25949EB91FCEBBC900602FCF /* GenerateRandomValue.swift */; };
+		E228AD4E1FD6D15500C44DEB /* PatternFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228AD4D1FD6D15500C44DEB /* PatternFaker.swift */; };
 		E29CCA751FD01039003D0C81 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CCA741FD01039003D0C81 /* RoundView.swift */; };
 		E29CCA771FD037BC003D0C81 /* AverageSensorValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CCA761FD037BC003D0C81 /* AverageSensorValues.swift */; };
 /* End PBXBuildFile section */
@@ -54,11 +55,12 @@
 		250B8E4A1FC6E69900B8992D /* ShoeFakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeFakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		250B8E4E1FC6E69900B8992D /* ShoeFakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeFakerUITests.swift; sourceTree = "<group>"; };
 		250B8E501FC6E69900B8992D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		250B8E5C1FC6E77600B8992D /* ShoeFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeFaker.swift; sourceTree = "<group>"; };
+		250B8E5C1FC6E77600B8992D /* BalanceFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceFaker.swift; sourceTree = "<group>"; };
 		250B8E5E1FC6F51300B8992D /* SensorValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorValues.swift; sourceTree = "<group>"; };
 		258117101FCEDACF00914729 /* LiftFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftFoot.swift; sourceTree = "<group>"; };
 		25949EB71FCEB7AA00602FCF /* ShoeDataNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDataNormalizer.swift; sourceTree = "<group>"; };
 		25949EB91FCEBBC900602FCF /* GenerateRandomValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateRandomValue.swift; sourceTree = "<group>"; };
+		E228AD4D1FD6D15500C44DEB /* PatternFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternFaker.swift; sourceTree = "<group>"; };
 		E29CCA741FD01039003D0C81 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		E29CCA761FD037BC003D0C81 /* AverageSensorValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageSensorValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,13 +145,14 @@
 		2581170F1FCEDA9200914729 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				250B8E5C1FC6E77600B8992D /* ShoeFaker.swift */,
+				250B8E5C1FC6E77600B8992D /* BalanceFaker.swift */,
 				250B8E5E1FC6F51300B8992D /* SensorValues.swift */,
 				25949EB71FCEB7AA00602FCF /* ShoeDataNormalizer.swift */,
 				25949EB91FCEBBC900602FCF /* GenerateRandomValue.swift */,
 				258117101FCEDACF00914729 /* LiftFoot.swift */,
 				E29CCA741FD01039003D0C81 /* RoundView.swift */,
 				E29CCA761FD037BC003D0C81 /* AverageSensorValues.swift */,
+				E228AD4D1FD6D15500C44DEB /* PatternFaker.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -290,9 +293,10 @@
 			files = (
 				25949EB81FCEB7AA00602FCF /* ShoeDataNormalizer.swift in Sources */,
 				25949EBA1FCEBBC900602FCF /* GenerateRandomValue.swift in Sources */,
-				250B8E5D1FC6E77600B8992D /* ShoeFaker.swift in Sources */,
+				250B8E5D1FC6E77600B8992D /* BalanceFaker.swift in Sources */,
 				250B8E311FC6E69900B8992D /* ViewController.swift in Sources */,
 				258117111FCEDACF00914729 /* LiftFoot.swift in Sources */,
+				E228AD4E1FD6D15500C44DEB /* PatternFaker.swift in Sources */,
 				E29CCA771FD037BC003D0C81 /* AverageSensorValues.swift in Sources */,
 				E29CCA751FD01039003D0C81 /* RoundView.swift in Sources */,
 				250B8E2F1FC6E69900B8992D /* AppDelegate.swift in Sources */,

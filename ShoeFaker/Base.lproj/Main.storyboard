@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,118 +14,79 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShoeFaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Links zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="GfE-2h-2db">
-                                <rect key="frame" x="72" y="103" width="270" height="680"/>
+                                <rect key="frame" x="141" y="64" width="270" height="680"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZEm-7R-gsx" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="172" y="172" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-1A-wSL" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="237" y="321" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UuM-TI-5de" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="107" y="347" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBF-5O-c4b" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="191" y="630" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rechts zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="QSt-kS-XNl">
-                                <rect key="frame" x="444" y="103" width="270" height="680"/>
+                                <rect key="frame" x="513" y="63" width="270" height="680"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-nh-0qa" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="544" y="172" width="70" height="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVM-c7-n9r">
+                                <rect key="frame" x="44" y="44" width="85" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EdK-ff-4VS" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="490" y="321" width="70" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="m9h-hG-hQl" userLabel="Right Shoe Sensor 4">
+                                <rect key="frame" x="613" y="133" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTQ-jb-K7p" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="609" y="347" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="Zes-OD-igo" userLabel="Right Shoe Sensor 3">
+                                <rect key="frame" x="559" y="282" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GM7-z0-xgE" customClass="RoundView" customModule="ShoeFaker" customModuleProvider="target">
-                                <rect key="frame" x="530" y="625" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-U1-4Hc" userLabel="Right Shoe Sensor 2">
+                                <rect key="frame" x="683" y="282" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="kHr-GX-j9M" userLabel="Right Shoe Sensor 1">
+                                <rect key="frame" x="599" y="586" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="kZH-Ts-UYl" userLabel="Left Shoe Sensor 4">
+                                <rect key="frame" x="241" y="133" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="luF-ql-8sQ" userLabel="Left Shoe Sensor 3">
+                                <rect key="frame" x="307" y="282" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="n5t-Kh-0Ew" userLabel="Left Shoe Sensor 2">
+                                <rect key="frame" x="170" y="282" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="elC-fC-cLm" userLabel="Left Shoe Sensor 1">
+                                <rect key="frame" x="260" y="591" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="leftShoeSensor1" destination="ZEm-7R-gsx" id="Dne-5J-heB"/>
-                        <outlet property="leftShoeSensor2" destination="lrj-1A-wSL" id="Cph-I9-Zf4"/>
-                        <outlet property="leftShoeSensor3" destination="UuM-TI-5de" id="Zxf-fD-uPj"/>
-                        <outlet property="leftShoeSensor4" destination="bBF-5O-c4b" id="pTG-9B-bwe"/>
-                        <outlet property="rightShoeSensor1" destination="fmM-nh-0qa" id="az5-KX-C9k"/>
-                        <outlet property="rightShoeSensor2" destination="EdK-ff-4VS" id="eWj-ua-sxY"/>
-                        <outlet property="rightShoeSensor3" destination="pTQ-jb-K7p" id="PHd-rs-3da"/>
-                        <outlet property="rightShoeSensor4" destination="GM7-z0-xgE" id="QO8-AY-gjR"/>
+                        <outlet property="faseLabel" destination="iVM-c7-n9r" id="Grr-Qk-QS0"/>
+                        <outlet property="leftShoeSensor1" destination="elC-fC-cLm" id="YWI-Kc-O4k"/>
+                        <outlet property="leftShoeSensor2" destination="n5t-Kh-0Ew" id="eri-sd-1Oz"/>
+                        <outlet property="leftShoeSensor3" destination="luF-ql-8sQ" id="SZp-IW-tYH"/>
+                        <outlet property="leftShoeSensor4" destination="kZH-Ts-UYl" id="Ec4-pe-pMv"/>
+                        <outlet property="rightShoeSensor1" destination="kHr-GX-j9M" id="bLn-mZ-CwS"/>
+                        <outlet property="rightShoeSensor2" destination="Byb-U1-4Hc" id="Bhb-vn-hQt"/>
+                        <outlet property="rightShoeSensor3" destination="Zes-OD-igo" id="rKl-aU-Zi3"/>
+                        <outlet property="rightShoeSensor4" destination="m9h-hG-hQl" id="W7z-8c-cGn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93.75" y="90.8203125"/>
+            <point key="canvasLocation" x="93.75" y="90.625"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Cirkeltjes" width="45" height="45"/>
         <image name="Links zool 1x" width="127" height="319"/>
         <image name="Rechts zool 1x" width="127" height="319"/>
     </resources>

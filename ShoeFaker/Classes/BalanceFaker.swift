@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ShoeFaker {
+class BalanceFaker {
     
     var timer = Timer()
     var liftLeftFoot = LiftFoot.init()
@@ -27,6 +27,7 @@ class ShoeFaker {
         
         let sensorValues: [String: SensorValue] = ["left_shoe": leftShoeValues, "right_shoe": rightShoeValues]
         
+        //print (sensorValues)
         // Posts sensor data to NotificationCenter
         NotificationCenter.default.post(name: Notification.Name("NewShoeData"), object: nil, userInfo: sensorValues)
         
@@ -64,10 +65,7 @@ class ShoeFaker {
         } else if (liftRightFoot.isLifting) {
             // Keep on lifting the right fot
             liftRightFoot.liftFoot()
-
         }
-        
-        
     }
     
     func getValue(lowestValue: Int, highestValue: Int) -> Int {
@@ -83,6 +81,7 @@ class ShoeFaker {
             randomInt = Int.random(range: getValue(lowestValue: liftLeftFoot.lowestValue, highestValue: liftLeftFoot.highestValue)...liftLeftFoot.highestValue)
         } else if (type == "RightFoot") {
             randomInt = Int.random(range: getValue(lowestValue: liftRightFoot.lowestValue, highestValue: liftRightFoot.highestValue)...liftRightFoot.highestValue)
+            //print ("randomInt: " + String(randomInt))
         }
     
         return ShoeDataNormalizer().normalizePressureValue(pressureValue: Float(randomInt))
