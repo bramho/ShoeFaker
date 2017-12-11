@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
     
     //Right shoe sensors
     
@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     var patternFaker = PatternFaker()
     var averageSensorValues = AverageSensorValue()
     
+    var c = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sensorOutlets = [rightShoeSensor1!,rightShoeSensor2!,rightShoeSensor3!,rightShoeSensor4!,leftShoeSensor1!,leftShoeSensor2!,leftShoeSensor3!,leftShoeSensor4!]
@@ -46,12 +48,14 @@ class ViewController: UIViewController {
     
     @objc func gotNewShoeData(notification: Notification) {
         //print(notification)
+        c += 1
         let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
         let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
         
         //averageSensorValues.calculateMaxAverage(leftShoe: leftShoeData, rightShoe: rightShoeData, sensorOutletArray: sensorOutlets)
         patternFaker.showValuesOnScreen(sensorOutletArray: sensorOutlets)
         faseLabel.text = String(patternFaker.fase)
+        print("test"  + String(c))
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WFj-AR-AKc">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,20 +9,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Looppatroon-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShoeFaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="ShoeFaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Links zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="GfE-2h-2db">
-                                <rect key="frame" x="141" y="64" width="270" height="680"/>
+                                <rect key="frame" x="157" y="21" width="270" height="680"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rechts zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="QSt-kS-XNl">
-                                <rect key="frame" x="513" y="63" width="270" height="680"/>
+                                <rect key="frame" x="529" y="20" width="270" height="680"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVM-c7-n9r">
@@ -33,41 +33,42 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="m9h-hG-hQl" userLabel="Right Shoe Sensor 4">
-                                <rect key="frame" x="613" y="133" width="70" height="70"/>
+                                <rect key="frame" x="629" y="90" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="Zes-OD-igo" userLabel="Right Shoe Sensor 3">
-                                <rect key="frame" x="559" y="282" width="70" height="70"/>
+                                <rect key="frame" x="575" y="239" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-U1-4Hc" userLabel="Right Shoe Sensor 2">
-                                <rect key="frame" x="683" y="282" width="70" height="70"/>
+                                <rect key="frame" x="699" y="239" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="kHr-GX-j9M" userLabel="Right Shoe Sensor 1">
-                                <rect key="frame" x="599" y="586" width="70" height="70"/>
+                                <rect key="frame" x="615" y="543" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="kZH-Ts-UYl" userLabel="Left Shoe Sensor 4">
-                                <rect key="frame" x="241" y="133" width="70" height="70"/>
+                                <rect key="frame" x="257" y="90" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="luF-ql-8sQ" userLabel="Left Shoe Sensor 3">
-                                <rect key="frame" x="307" y="282" width="70" height="70"/>
+                                <rect key="frame" x="323" y="239" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="n5t-Kh-0Ew" userLabel="Left Shoe Sensor 2">
-                                <rect key="frame" x="170" y="282" width="70" height="70"/>
+                                <rect key="frame" x="186" y="239" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="elC-fC-cLm" userLabel="Left Shoe Sensor 1">
-                                <rect key="frame" x="260" y="591" width="70" height="70"/>
+                                <rect key="frame" x="276" y="548" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Looppatroon" id="F4p-MJ-BmP"/>
                     <connections>
                         <outlet property="faseLabel" destination="iVM-c7-n9r" id="Grr-Qk-QS0"/>
                         <outlet property="leftShoeSensor1" destination="elC-fC-cLm" id="YWI-Kc-O4k"/>
@@ -83,6 +84,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93.75" y="90.625"/>
+        </scene>
+        <!--Gewicht-->
+        <scene sceneID="2Uh-uA-Eya">
+            <objects>
+                <viewController id="8gl-S2-5fP" customClass="ThirdViewController" customModule="ShoeFaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0U-6S-cYX">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="W51-hl-gmX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gewicht" id="tSe-pa-YPH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNN-Q1-OVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="1378"/>
+        </scene>
+        <!--Balans-->
+        <scene sceneID="uke-Vb-5rd">
+            <objects>
+                <viewController id="WPZ-sz-mLa" customClass="SecondViewController" customModule="ShoeFaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UMK-R6-JbA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SPR-pr-Q47"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Balans" id="50F-6I-ig2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9v-5T-TpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="722"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wsU-CD-Ba6">
+            <objects>
+                <tabBarController id="WFj-AR-AKc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KGc-3t-lhk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WPZ-sz-mLa" kind="relationship" relationship="viewControllers" id="pi5-Be-Si1"/>
+                        <segue destination="8gl-S2-5fP" kind="relationship" relationship="viewControllers" id="6Yc-oa-gf9"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="yg9-s0-9I5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nct-Du-7fN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="1050"/>
         </scene>
     </scenes>
     <resources>
