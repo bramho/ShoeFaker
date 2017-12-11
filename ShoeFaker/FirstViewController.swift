@@ -36,14 +36,32 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         sensorOutlets = [rightShoeSensor1!,rightShoeSensor2!,rightShoeSensor3!,rightShoeSensor4!,leftShoeSensor1!,leftShoeSensor2!,leftShoeSensor3!,leftShoeSensor4!]
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         // Start interval
         //balanceFaker.scheduledTimerWithTimeInterval()
         patternFaker.scheduledTimerWithTimeInterval()
-        
+
         // Listen for new data
         NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewShoeData(notification:)), name: Notification.Name("NewSensorData"), object: nil)
-        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        sensorOutlets = [rightShoeSensor1!,rightShoeSensor2!,rightShoeSensor3!,rightShoeSensor4!,leftShoeSensor1!,leftShoeSensor2!,leftShoeSensor3!,leftShoeSensor4!]
+//        // Do any additional setup after loading the view, typically from a nib.
+//
+//        // Start interval
+//        //balanceFaker.scheduledTimerWithTimeInterval()
+        patternFaker.repeats = true
+//        patternFaker.scheduledTimerWithTimeInterval()
+//
+//        // Listen for new data
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewShoeData(notification:)), name: Notification.Name("NewSensorData"), object: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        patternFaker.repeats = false
+        print("test")
     }
     
     @objc func gotNewShoeData(notification: Notification) {

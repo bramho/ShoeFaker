@@ -24,6 +24,7 @@ class PatternFaker{
     var timer = Timer()
     var liftLeftFoot = LiftFoot.init()
     var liftRightFoot = LiftFoot.init()
+    var repeats: Bool = true
     
     // Starts interval
     func scheduledTimerWithTimeInterval () {
@@ -31,17 +32,18 @@ class PatternFaker{
     }
     
     @objc func generateShoeValues () {
-        
-        let leftShoeValues = SensorValue(sensor1: Float(leftFootSensors[0]), sensor2: Float(leftFootSensors[1]), sensor3: Float(leftFootSensors[2]), sensor4: Float(leftFootSensors[3]))
-        
-        let rightShoeValues = SensorValue(sensor1: Float(rightFootSensors[0]), sensor2: Float(rightFootSensors[1]), sensor3: Float(rightFootSensors[2]), sensor4: Float(rightFootSensors[3]))
-        
-        let sensorValues: [String: SensorValue] = ["left_shoe": leftShoeValues, "right_shoe": rightShoeValues]
-        //print (fase)
-        // Posts sensor data to NotificationCenter
-        NotificationCenter.default.post(name: Notification.Name("NewSensorData"), object: nil, userInfo: sensorValues)
-        //print(NotificationCenter.default.post(name: Notification.Name("NewSensorData1"), object: nil, userInfo: sensorValues))
-        count()
+        if repeats{
+            let leftShoeValues = SensorValue(sensor1: Float(leftFootSensors[0]), sensor2: Float(leftFootSensors[1]), sensor3: Float(leftFootSensors[2]), sensor4: Float(leftFootSensors[3]))
+            
+            let rightShoeValues = SensorValue(sensor1: Float(rightFootSensors[0]), sensor2: Float(rightFootSensors[1]), sensor3: Float(rightFootSensors[2]), sensor4: Float(rightFootSensors[3]))
+            
+            let sensorValues: [String: SensorValue] = ["left_shoe": leftShoeValues, "right_shoe": rightShoeValues]
+            //print (fase)
+            // Posts sensor data to NotificationCenter
+            NotificationCenter.default.post(name: Notification.Name("NewSensorData"), object: nil, userInfo: sensorValues)
+            //print(NotificationCenter.default.post(name: Notification.Name("NewSensorData1"), object: nil, userInfo: sensorValues))
+            count()
+        }
         
     }
     func showValuesOnScreen(sensorOutletArray: [UIView]){
